@@ -1,0 +1,1010 @@
+
+/*css header*/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    font-size: 12pt;
+    font-family: scriptina;
+    background-color:#fface6;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin-top: none;
+    height: 150px;
+    text-align:center;
+    padding-top: 20px;
+   max-width: 100%;
+}
+
+.cabecalho p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+.nome{grid-area: nome;}
+.imageLista{grid-area: imagemLista; max-width: 10vh;
+    max-height: 10vh;
+    padding: 20px;
+    cursor: pointer;}
+
+
+
+/*section css*/
+.section{ 
+ 
+    justify-content: center; 
+    align-items:center;
+  
+    max-width: 100%;
+    }
+.textSection{
+    display: grid;
+    
+    grid-template-areas: 
+    "head"
+    "serv1"
+    "serv2"
+    "serv3"
+    "serv4"
+    "serv5"
+    "serv6"
+    "agende";
+    align-items:center;
+    justify-content: center;
+    
+    max-width: 100%;
+    border-top: 20px;
+    color: #000000;
+  
+    opacity: 80%;
+    border-radius: 2%;
+    font-size:10pt;
+    background-color:palevioletred;
+    font-family: monospace;
+}
+
+.head{grid-area: head; }
+.serv1{grid-area: serv1;}
+.serv2{grid-area: serv2;}
+.serv3{grid-area: serv3;}
+.serv4{grid-area: serv4;}
+.serv5{grid-area: serv5;}
+.serv6{grid-area: serv6;}
+.agende{
+    grid-area: agende; 
+    background-color: #fface6;
+     max-width: 95%;
+    border-radius: 20px;
+    text-align: center;
+   align-items: center;
+   justify-content: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bolder;
+    }
+.agende:hover{background-color:greenyellow;}
+.textSection h1{ background-color: #fface6;
+border-radius: 25px;padding: 20px; }
+.textSection h2{
+    text-align: center;
+    background-color: #fface6;
+    border-radius: 20px;
+    padding: 2px;
+}
+/*css fale conosco*/
+.Fixed{   justify-content: center;
+   
+    max-width: 100%;
+    
+    border-radius: 50%;
+  }
+/*whats css*/
+.logoWhats{
+    border-radius: 50%;
+    max-width: 100px;
+    margin-bottom: 5px;
+  
+}
+.logoWhats img{ max-width: 80%; border-radius: 50%;}
+.logoWhats img:hover{cursor: pointer;}
+/*carrossel css*/
+.inner{display: flex;}
+.item{min-height: 100px;
+min-width: 200px;
+padding:14px;}
+.item img{
+    width: 100%;
+    height:90%;
+    border-radius:12px;
+    pointer-events:none;
+}
+.carrossel2{cursor:grab;
+overflow:hidden;
+}
+ .carrossel{
+    width: 100%;
+    max-width: 670px;
+ }
+ /*faixa css*/
+ .faixaInt{
+    display: grid;
+    grid-template-areas: "first second third";
+    background-color:#fface6;
+    font-weight: bolder;
+    font-size: 20pt;
+    align-items: center;
+    max-width: 1000px;
+    
+                       
+ }
+ .first{
+    grid-area: first;
+    grid-template-areas: "numero1"
+                          "dado1";
+ }
+ .second{ grid-area: second;
+grid-template-areas: "numero2"
+                      "dado2";}
+.third{ grid-area: third;
+grid-template-areas: "numero3"
+                     "dado3";}
+.numero1 ,.numero2, .numero3{
+    text-decoration: underline;
+    text-align: center;
+}
+.dado1,.dado2,.dado3{
+    text-align: center;
+}
+
+/*css footer*/
+
+
+.foot
+{display: grid;
+grid-template-areas:
+ "texto texto "
+ "lista lista"
+;
+justify-content: center;
+align-items: center;
+background-color: #fface6;
+font-family: monospace;}
+.listaRedes
+{grid-area: lista;}
+
+
+
+.textoFooter {
+    
+    grid-area: texto;
+    
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+   max-width: 200px;
+    
+    }
+
+/*tag contato*/
+.tagContato{
+    display:flex ;
+  
+   
+   padding: 5px;
+
+}
+
+.enderecoTag{
+    margin-left: 25px;
+    padding-right: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    
+    max-width: 900px;
+}
+
+
+.divRedes{
+margin-right: 30px;}
+
+/* css dentista imagem*/
+.foto{max-width: 100%; padding: 3px;}
+.foto img{
+    
+    border-radius: 2%;
+}
+
+/*Sobre*/
+.sobre{text-align: center;
+font-family: monospace;
+background-color:#fd7eec;
+padding: 10px;}
+
+/*Redes Sociais*/
+.RedesSociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.RedesSociais img{ max-width: 30px;padding: 10px;}
+.instaRedes:hover{cursor: pointer; border-radius: 10px;}
+.faceRedes:hover{cursor: pointer;border-radius: 10px;}
+.linkedinRedes:hover{cursor: pointer;border-radius: 10px;}
+.youtubeRedes:hover{cursor:pointer;}
+
+
+/*media querry*/
+@media(max-width:960px){
+.section{
+    max-width: 900px;
+   
+}
+.textSection{max-width: 100%;}
+}
+.faixaInt{font-size: 20px;}
+
+
+
+
+
+
+
+
+
+/*media 650px*//**//**/
+@media(max-width:650px){
+/* css dentista imagem*/
+.foto{max-width: 100%; padding: 3px;}
+.foto img{
+    border-radius: 2%;
+}
+/*css fale conosco*/
+.Fixed{   justify-content: center;
+   
+    max-width: 100%;
+    border-radius: 50%;
+    
+  }
+/*css header*/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    font-size: 9pt;
+    font-family: scriptina;
+    background-color:#fface6;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin-top: none;
+    height: 150px;
+    text-align:center;
+    padding-top: 10px;
+   max-width: 90%;
+}
+
+.cabecalho p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+.nome{grid-area: nome;}
+.imageLista{grid-area: imagemLista; max-width: 10vh;
+    max-height: 10vh;
+    padding: 20px;
+    cursor: pointer;}
+
+
+
+/*section css*/
+.section{ 
+ 
+    justify-content: center; 
+    align-items:center;
+  
+    max-width: 100%;
+    }
+.textSection{
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "serv1"
+    "serv2"
+    "serv3"
+    "serv4"
+    "serv5"
+    "serv6"
+    "agende";
+    align-items:center;
+    justify-content: center;
+    
+    max-width: 100%;
+    border-top: 20px;
+    color: #000000;
+  
+    opacity: 80%;
+    border-radius: 2%;
+    font-size:10pt;
+    background-color:palevioletred;
+    font-family: monospace;
+}
+
+.head{grid-area: head; }
+.serv1{grid-area: serv1;}
+.serv2{grid-area: serv2;}
+.serv3{grid-area: serv3;}
+.serv4{grid-area: serv4;}
+.serv5{grid-area: serv5;}
+.serv6{grid-area: serv6;}
+.agende{
+    grid-area: agende; 
+    background-color: #fface6;
+     max-width: 95%;
+    border-radius: 20px;
+    text-align: center;
+   align-items: center;
+   justify-content: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bolder;
+    }
+.agende:hover{background-color:greenyellow;}
+.textSection h1{ background-color: #fface6;
+border-radius: 25px;padding: 10px; }
+.textSection h2{
+    text-align: center;
+    background-color: #fface6;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+/*whats css*/
+.logoWhats{
+    max-width: 100px;
+}
+.logoWhats img{max-width: 70%;}
+.logoWhats img:hover{cursor: pointer;}
+/*carrossel css*/
+.inner{display: flex;}
+.item{min-height: 100px;
+min-width: 200px;
+padding:10px;}
+.item img{
+    width: 100%;
+    height:90%;
+    border-radius:12px;
+    pointer-events:none;
+}
+.carrossel2{cursor:grab;
+overflow:hidden;
+}
+ .carrossel{
+    width: 100%;
+    max-width: 400px;
+ }
+ /*faixa css*/
+ .faixaInt{
+    display: grid;
+    grid-template-areas: "first second third";
+    background-color:#fface6;
+    font-weight: bolder;
+    font-size: 20pt;
+    align-items: center;
+    max-width: 1000px;
+    
+                       
+ }
+ .first{
+    grid-area: first;
+    grid-template-areas: "numero1"
+                          "dado1";
+ }
+ .second{ grid-area: second;
+grid-template-areas: "numero2"
+                      "dado2";}
+.third{ grid-area: third;
+grid-template-areas: "numero3"
+                     "dado3";}
+.numero1 ,.numero2, .numero3{
+    text-decoration: underline;
+    text-align: center;
+}
+.dado1,.dado2,.dado3{
+    text-align: center;
+}
+
+/*css footer*/
+
+
+.foot
+{display: grid;
+grid-template-areas:
+ "texto texto "
+ "lista lista"
+;
+justify-content: center;
+align-items: center;
+background-color: #fface6;
+font-family: monospace;}
+.listaRedes
+{grid-area: lista;}
+
+
+
+.textoFooter {
+    
+    grid-area: texto;
+    
+    
+    justify-content: center;
+    align-items: center;
+   max-width: 200px;
+    
+    }
+
+/*tag contato*/
+.tagContato{
+    display:flex ;
+  
+ 
+   padding: 5px;
+
+}
+
+.enderecoTag{
+    margin-left: 25px;
+    padding-right: 10px;
+    font-family: monospace;
+    font-size: 20px;
+    
+    max-width: 900px;
+}
+
+
+.divRedes{
+margin-right: 30px;}
+
+
+/*Sobre*/
+.sobre{text-align: center;
+font-family: monospace;
+background-color:#fd7eec;
+padding: 10px;}
+
+/*Redes Sociais*/
+.RedesSociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RedesSociais img{max-width: 30px; padding: 2px;}
+.instaRedes:hover{cursor: pointer; border-radius: 10px;}
+.faceRedes:hover{cursor: pointer;border-radius: 10px;}
+.linkedinRedes:hover{cursor: pointer;border-radius: 10px;}
+.youtubeRedes:hover{cursor:pointer;border-radius: 10px;}
+
+
+}
+
+
+
+
+
+
+/*media 450 px*/
+@media(max-width:450px){
+
+/*css header*/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    font-size: 9pt;
+    font-family: scriptina;
+    background-color:#fface6;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin-top: none;
+    height: 150px;
+    text-align:center;
+    padding-top: 10px;
+    /*mudar depois */
+   max-width: 100%;
+  
+}
+
+.cabecalho p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+.nome{grid-area: nome;}
+.imageLista{grid-area: imagemLista; max-width: 10vh;
+    max-height: 10vh;
+    padding: 20px;
+    cursor: pointer;}
+
+/*tag contato*/
+.tagContato{
+    display:grid ;
+    grid-template-areas: "endereco"
+                         "redes";
+  
+ 
+   padding: 5px;
+
+}
+
+.enderecoTag{
+    grid-area: endereco;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+
+.divRedes{
+    grid-area: redes;
+margin-right: 30px;
+margin: auto;}
+
+
+
+/* css dentista imagem*/
+.foto{max-width: 150%; padding: 3px; margin: auto;}
+.foto img{ 
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+
+/*section css*/
+.section{ 
+    justify-content: center; 
+    align-items:center;
+    max-width: 100%;
+    }
+.textSection{
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "serv1"
+    "serv2"
+    "serv3"
+    "serv4"
+    "serv5"
+    "serv6"
+    "agende";
+    align-items:center;
+    justify-content: center;
+    
+    max-width: 100%;
+    border-top: 10px;
+    color: #000000;
+  
+    opacity: 80%;
+    border-radius: 2%;
+    font-size:10pt;
+    background-color:palevioletred;
+    font-family: monospace;
+}
+
+.head{grid-area: head; }
+.serv1{grid-area: serv1;}
+.serv2{grid-area: serv2;}
+.serv3{grid-area: serv3;}
+.serv4{grid-area: serv4;}
+.serv5{grid-area: serv5;}
+.serv6{grid-area: serv6;}
+.agende{
+    grid-area: agende; 
+    background-color: #fface6;
+     max-width: 95%;
+    border-radius: 20px;
+    text-align: center;
+   align-items: center;
+   justify-content: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bolder;
+    }
+.agende:hover{background-color:greenyellow;}
+.textSection h1{ background-color: #fface6;
+border-radius: 25px;padding: 10px; }
+.textSection h2{
+    text-align: center;
+    background-color: #fface6;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+
+/*Sobre*/
+.sobre{text-align: center;
+    font-family: monospace;
+    background-color:#fd7eec;
+    
+max-width: 90%; margin: auto;}
+
+
+    /*faixa css*/
+ .faixaInt{
+    display: grid;
+    grid-template-areas: "first"
+                         "second"
+                         "third";
+    background-color:#fface6;
+    font-weight: bolder;
+    font-size: 20px;
+    align-items: center;
+    margin: auto;
+    
+                       
+ }
+ .first{
+    grid-area: first;
+    grid-template-areas: "numero1"
+                          "dado1";
+ }
+ .second{ grid-area: second;
+grid-template-areas: "numero2"
+                      "dado2";}
+.third{ grid-area: third;
+grid-template-areas: "numero3"
+                     "dado3";}
+.numero1 ,.numero2, .numero3{
+    text-decoration: underline;
+    text-align: center;
+}
+.dado1,.dado2,.dado3{
+    text-align: center;
+}
+    
+/*carrossel css*/
+.inner{display: flex;}
+.item{min-height: 90px;
+min-width: 190px;
+padding:2px;}
+.item img{
+    width: 90%;
+    height:80%;
+    border-radius:12px;
+    pointer-events:none;
+    padding: 1px;
+}
+.carrossel2{cursor:grab;
+overflow:hidden;
+}
+ .carrossel{
+  margin: auto;
+    max-width: 350px;
+ }
+ 
+
+/*css fale conosco*/
+.Fixed{   justify-content: center;
+   
+    max-width: 100%;
+   
+    border-radius: 50%;
+  }
+
+/*whats css*/
+.logoWhats{
+    max-width: 100px;
+}
+.logoWhats img{max-width: 60%;}
+
+.logoWhats img:hover{cursor: pointer;}
+
+/*css footer*/
+.foot
+{display: grid;
+grid-template-areas:
+ "texto texto "
+ "lista lista"
+;
+justify-content: center;
+align-items: center;
+background-color: #fface6;
+font-family: monospace;}
+.listaRedes
+{grid-area: lista;}
+
+
+
+.textoFooter {
+    
+    grid-area: texto;
+    margin: auto;
+    
+    justify-content: center;
+    align-items: center;
+   max-width: 200px;
+    
+    }
+
+
+
+
+/*Redes Sociais*/
+.RedesSociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RedesSociais img{max-width: 30px; padding: 10px;}
+.instaRedes:hover{cursor: pointer; border-radius: 10px;}
+.faceRedes:hover{cursor: pointer;border-radius: 10px;}
+.linkedinRedes:hover{cursor: pointer;border-radius: 10px;}
+.youtubeRedes:hover{cursor:pointer;border-radius: 10px;}
+
+
+}
+
+
+
+
+
+
+/*media 360px*/
+@media(max-width:360px){
+
+    /*css header*/
+.cabecalho{
+    display: flex;
+    justify-content: center;
+    font-size: 9pt;
+    font-family: scriptina;
+    background-color:#fface6;
+    border-radius: 5px;
+    color: antiquewhite;
+    margin-top: none;
+    height: 150px;
+    text-align:center;
+    padding-top: 10px;
+    /*mudar depois */
+   max-width: 100%;
+   
+}
+
+.cabecalho p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 9pt;
+    color: #000000;
+}
+.nome{grid-area: nome;}
+.imageLista{grid-area: imagemLista; max-width: 10vh;
+    max-height: 10vh;
+    padding: 20px;
+    cursor: pointer;}
+
+/*tag contato*/
+.tagContato{
+    display:grid ;
+    grid-template-areas: "endereco"
+                         "redes";
+  margin: auto;
+  max-width: 90%;
+   padding: 1px;
+
+}
+
+.enderecoTag{
+    grid-area: endereco;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    font-family: monospace;
+    font-size: 21px;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+
+
+.divRedes{
+    grid-area: redes;
+
+margin: auto;}
+
+
+
+/* css dentista imagem*/
+.foto{max-width: 90%; padding: 3px; margin: auto;}
+.foto img{ 
+    max-width: 100%;
+    border-radius: 2%;
+}
+
+
+/*section css*/
+.section{ 
+    justify-content: center; 
+    align-items:center;
+    max-width: 90%;
+    }
+.textSection{
+    display: grid;
+    grid-template-areas: 
+    "head"
+    "serv1"
+    "serv2"
+    "serv3"
+    "serv4"
+    "serv5"
+    "serv6"
+    "agende";
+    align-items:center;
+    justify-content: center;
+    
+    max-width: 90%;
+    border-top: 10px;
+    color: #000000;
+  
+    opacity: 80%;
+    border-radius: 2%;
+    font-size:10pt;
+    background-color:palevioletred;
+    font-family: monospace;
+}
+
+.head{grid-area: head; }
+.serv1{grid-area: serv1;}
+.serv2{grid-area: serv2;}
+.serv3{grid-area: serv3;}
+.serv4{grid-area: serv4;}
+.serv5{grid-area: serv5;}
+.serv6{grid-area: serv6;}
+.agende{
+    grid-area: agende; 
+    background-color: #fface6;
+     max-width: 95%;
+    border-radius: 20px;
+    text-align: center;
+   align-items: center;
+   justify-content: center;
+    padding: 5px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bolder;
+    }
+.agende:hover{background-color:greenyellow;}
+.textSection h1{ background-color: #fface6;
+border-radius: 25px;padding: 10px; }
+.textSection h2{
+    text-align: center;
+    background-color: #fface6;
+    border-radius: 20px;
+    padding: 2px;
+}
+
+
+/*Sobre*/
+.sobre{text-align: center;
+    font-family: monospace;
+    background-color:#fd7eec;
+    
+max-width: 90%; margin: auto;}
+
+
+    /*faixa css*/
+ .faixaInt{
+    display: grid;
+    grid-template-areas: "first"
+                         "second"
+                         "third";
+    background-color:#fface6;
+    font-weight: bolder;
+    font-size: 20px;
+    align-items: center;
+    margin: auto;
+    
+                       
+ }
+ .first{
+    grid-area: first;
+    grid-template-areas: "numero1"
+                          "dado1";
+ }
+ .second{ grid-area: second;
+grid-template-areas: "numero2"
+                      "dado2";}
+.third{ grid-area: third;
+grid-template-areas: "numero3"
+                     "dado3";}
+.numero1 ,.numero2, .numero3{
+    text-decoration: underline;
+    text-align: center;
+}
+.dado1,.dado2,.dado3{
+    text-align: center;
+}
+    
+/*carrossel css*/
+.inner{display: flex;}
+.item{min-height: 90px;
+min-width: 190px;
+padding:2px;}
+.item img{
+    width: 90%;
+    height:80%;
+    border-radius:12px;
+    pointer-events:none;
+    padding: 1px;
+}
+.carrossel2{cursor:grab;
+overflow:hidden;
+}
+ .carrossel{
+  margin: auto;
+    max-width: 350px;
+ }
+ 
+
+/*css fale conosco*/
+.Fixed{   justify-content: center;
+   
+    max-width: 90%;
+    
+    border-radius: 50%;
+  }
+ 
+/*whats css*/
+.logoWhats{
+    max-width: 100px;
+}
+
+.logoWhats img{max-width: 60%;}
+.logoWhats img:hover{cursor: pointer;}
+
+/*css footer*/
+.foot
+{display: grid;
+grid-template-areas:
+ "texto texto "
+ "lista lista"
+;
+justify-content: center;
+align-items: center;
+background-color: #fface6;
+font-family: monospace;}
+.listaRedes
+{grid-area: lista;}
+
+
+
+.textoFooter {
+    
+    grid-area: texto;
+    margin: auto;
+    
+    justify-content: center;
+    align-items: center;
+   max-width: 90%;
+    
+    }
+
+
+
+
+/*Redes Sociais*/
+.RedesSociais{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.RedesSociais img{max-width: 30px; padding: 10px;}
+.instaRedes:hover{cursor: pointer; border-radius: 10px;}
+.faceRedes:hover{cursor: pointer;border-radius: 10px;}
+.linkedinRedes:hover{cursor: pointer;border-radius: 10px;}
+.youtubeRedes:hover{cursor:pointer;border-radius: 10px;}
+
+
+
+}

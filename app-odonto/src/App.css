@@ -1,0 +1,232 @@
+
+body{background-color: rgb(196, 196, 196);
+}
+.app{max-width: 100%;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+    
+}
+.wrapper{ 
+     display: grid;
+    row-gap: 30px;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    grid-template-areas:
+    "header header header"
+    "tag tag tag"
+    "foto texto texto"
+    "sobre sobre sobre"
+    "faixa faixa faixa"
+    "carrossel carrossel carrossel"
+    "contato contato contado"
+    "footer footer footer" ;
+}
+
+
+.fotoApp{grid-area: foto; max-width: 100vh; margin: auto;padding: 10px;}
+.fotoApp div{ max-width: 100%;}
+.textoApp{
+    grid-area:texto;
+    max-width: 90%;
+  align-items: center;
+    justify-content: center;
+}
+
+
+.carrosselApp{
+grid-area: carrossel;
+color:#fff;
+width:100%;
+margin:0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.footerApp{grid-area:footer}
+.headerApp{grid-area: header;}
+.contatoApp{position: fixed;
+         left: 95%;
+          bottom: 1px;}
+.FaixaApp{
+    grid-area: faixa;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.FaixaApp div{
+    max-width: 100%;
+}
+.footerApp{max-width: 100%;}
+.tagApp{grid-area: tag; margin: auto;}
+.sobApp{grid-area: sobre;}
+
+/*Media querry*/
+@media(max-width:1145px){
+    
+    .wrapper{ 
+        display: grid;
+       row-gap: 2px;
+       column-gap: 1px;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+       
+       grid-template-areas:
+       "header header "
+       "tag tag "
+       "foto texto "
+       "sobre sobre "
+       "faixa faixa "
+       "carrossel carrossel "
+       "contato contato "
+       "footer footer " ;
+   }
+
+}
+@media(max-width:1000px){
+  
+    .wrapper{ 
+            max-width: 900px;
+            display: grid;
+           row-gap: 30px;
+           grid-template-areas:
+           "header "
+           "tag "
+           "foto "
+           "texto "
+           "sobre "
+           "faixa "
+           "carrossel"
+           "contato "
+           "footer " ;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+       }
+       
+
+.fotoApp{
+    grid-area: foto; 
+    max-width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+    align-items: center;
+      justify-content: center;
+   }
+    
+   .fotoApp div{ max-width: 100%;}
+
+
+.textoApp{max-width: 9000px;  grid-area:texto; align-items: center; margin: 50px;margin-top: 10px;}
+.textoApp div{max-width: 100%;}
+
+.carrosselApp{
+grid-area: carrossel;
+color:#fff;
+width:100%;
+margin:0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.footerApp{grid-area:footer}
+.headerApp{grid-area: header;}
+.contatoApp{position: fixed;
+         left: 95%;
+          bottom: 1px;}
+.FaixaApp{
+    grid-area: faixa;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.FaixaApp div{
+    max-width: 100%;
+}
+.footerApp{max-width: 100%;}
+.tagApp{grid-area: tag;}
+.sobApp{grid-area: sobre;}
+    }
+
+
+
+
+    /*media 450 px*/
+@media(max-width:450px){
+
+    body{background-color: rgb(196, 196, 196);
+    }
+    .app{max-width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+        
+    }
+    .wrapper{ 
+         display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        grid-template-areas:
+        "header"
+        "tag "
+        "foto "
+        "texto"
+        "sobre "
+        "faixa "
+        "carrossel "
+        "contato "
+        "footer" ;
+    }
+    
+    
+    .fotoApp{grid-area: foto; max-width: 100%; padding: 10px; margin: auto;}
+ 
+    .textoApp{
+        grid-area:texto;
+        max-width: 100%;
+      align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    
+    .carrosselApp{
+    grid-area: carrossel;
+    color:#fff;
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .footerApp{grid-area:footer}
+    .headerApp{grid-area: header;}
+    .contatoApp{position: fixed;
+             left: auto;}
+    .FaixaApp{
+        grid-area: faixa;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+       
+    }
+    .FaixaApp div{
+        max-width: 100%;
+    }
+    .footerApp{max-width: 100%;}
+    .tagApp{grid-area: tag;}
+    .sobApp{grid-area: sobre;}    
+}
+/*media 650px*//*media 650px*//*media 650px*//*media 650px*/
