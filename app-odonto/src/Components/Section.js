@@ -15,7 +15,9 @@ const Section=()=>{
              <h2 className="serv7">Extrações</h2>
              
             </div>
-             <div className="agende"><p>AGENDE A SUA CONSULTA</p></div>
+             <div className="agende"><a href="https://wa.me/5524999265662" target='blank'>
+                 <p>AGENDE A SUA CONSULTA</p>
+             </a></div>
         </div>
     )
 }

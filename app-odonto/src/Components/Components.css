@@ -82,6 +82,7 @@
     margin-top: 10px;
     font-weight: bolder;
     }
+.agende a{text-decoration: none;}
 .agende:hover{background-color:greenyellow;}
 .textSection h1{ background-color: #fface6;
 border-radius: 25px;padding: 20px; }

@@ -24,7 +24,7 @@ useEffect(()=> {console.log(caroussel.current?.scrollWidth,caroussel.current?.of
             initial={{x:100}}
             animate={{x:0}}
             transition={{duration:0.8}}>
-                {images.map(images =>(<motion.div key={images} className='item'><img src={images}></img></motion.div>))}
+                {images.map(images =>(<motion.div key={images} className='item'><img src={images} ></img></motion.div>))}
             </motion.div>
            </motion.div>
        </div>
