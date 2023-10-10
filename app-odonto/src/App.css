@@ -20,6 +20,7 @@ body{background-color: rgb(196, 196, 196);
     "header header header"
     "tag tag tag"
     "foto texto texto"
+    "video video video"
     "sobre sobre sobre"
     "faixa faixa faixa"
     "carrossel carrossel carrossel"
@@ -37,7 +38,7 @@ body{background-color: rgb(196, 196, 196);
     justify-content: center;
 }
 
-
+.videoApp{grid-area: video; margin: auto;}
 .carrosselApp{
 grid-area: carrossel;
 color:#fff;
