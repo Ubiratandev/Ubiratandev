@@ -1,7 +1,8 @@
+
 import './Components.css'
 import DentistaImagem from './DentistaImagen'
 const Section=()=>{
-    return(
+     return(
         <div className="section">
             
             <div className="textSection">
@@ -13,6 +14,8 @@ const Section=()=>{
              <h2 className="serv5">Implantes</h2>
              <h2 className="serv6">Facetas</h2>
              <h2 className="serv7">Extrações</h2>
+             
+                
              
             </div>
              <div className="agende"><a href="https://wa.me/5524999265662" target='blank'>

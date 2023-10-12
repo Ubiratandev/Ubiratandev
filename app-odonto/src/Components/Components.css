@@ -47,6 +47,13 @@
     "serv4"
     "serv5"
     "serv6"
+    "serv7"
+    "serv8"
+    "serv9"
+    "serv10"
+    "serv11"
+    "serv12"
+    
     "agende";
     align-items:center;
     justify-content: center;
@@ -92,6 +99,17 @@ border-radius: 25px;padding: 20px; }
     border-radius: 20px;
     padding: 2px;
 }
+/*css video*/
+.playerWrapper{width: 50%;height: 90%;margin: auto; position: relative;border: solid 10px rgb(255, 132, 249);}
+.react-player{ position: absolute; top:0;left: 0;}
+.react-player  div{position: absolute; max-width: 50%;}
+.react-player video{
+    
+}
+.video{max-width: 100%;}
+
+
+
 /*css fale conosco*/
 .Fixed{   justify-content: center;
    
@@ -152,6 +170,7 @@ grid-template-areas: "numero3"
 .numero1 ,.numero2, .numero3{
     text-decoration: underline;
     text-align: center;
+    
 }
 .dado1,.dado2,.dado3{
     text-align: center;
@@ -523,7 +542,9 @@ padding: 10px;}
     max-height: 10vh;
     padding: 20px;
     cursor: pointer;}
-
+/*css video*/
+.video{ margin: auto; max-width: 100%;}
+.playerWrapper{width: 90%;}
 /*tag contato*/
 .tagContato{
     display:grid ;
@@ -784,7 +805,12 @@ font-family: monospace;}
     max-height: 10vh;
     padding: 20px;
     cursor: pointer;}
-
+/*css video*/
+.playerWrapper{ position: relative;
+     }
+.react-player{ }
+.react-player > div{position: absolute;max-width: 90%;}
+.video{max-width: 100%;}
 /*tag contato*/
 .tagContato{
     display:grid ;

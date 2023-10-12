@@ -10,14 +10,15 @@ import FaixaInform from'./Components/FaixaInform';
 import Footer from './Components/Footer';
 import TagContato from './Components/TagContato';
 import Sobre from './Components/Sobre';
-import VideoP from './Components/VideoP';
+import VideoPlayer from './Components/VideoPlayer';
+
 function App() {
   return (
     <div className="App" >
      <div className='wrapper'>
        <div className='headerApp'><Header/></div>
        <div className='tagApp'><TagContato/></div>
-       <div className='videoApp'><VideoP/></div>
+      <div className='videoApp'><VideoPlayer/></div>
        <div className='fotoApp'><DentistaImagem/></div>
        <div className='textoApp'><Section/></div>
        <div className='sobApp'><Sobre/></div>
