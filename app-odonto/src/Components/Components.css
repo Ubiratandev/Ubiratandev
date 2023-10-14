@@ -103,10 +103,9 @@ border-radius: 25px;padding: 20px; }
 .playerWrapper{width: 50%;height: 90%;margin: auto; position: relative;border: solid 10px rgb(255, 132, 249);}
 .react-player{ position: absolute; top:0;left: 0;}
 .react-player  div{position: absolute; max-width: 50%;}
-.react-player video{
-    
-}
-.video{max-width: 100%;}
+.chamadaVideo{display: flex;background-color: #fd7eec;max-width: 100%;  align-items: center;
+    justify-content: center;margin-bottom: 50px; color: rgb(0, 0, 0);padding: 50px;font-family:monospace ;}
+.video{max-width: 100%; align-items: center; justify-content: center;}
 
 
 
@@ -144,6 +143,9 @@ overflow:hidden;
     width: 100%;
     max-width: 670px;
  }
+
+ .chamadaFotos{display: flex;max-width: 100%;  align-items: center;
+    justify-content: center;margin-bottom: 20px; color: rgb(0, 0, 0);padding: 20px;font-family:monospace ;}
  /*faixa css*/
  .faixaInt{
     display: grid;
@@ -402,6 +404,8 @@ overflow:hidden;
     width: 100%;
     max-width: 400px;
  }
+
+
  /*faixa css*/
  .faixaInt{
     display: grid;
@@ -544,6 +548,9 @@ padding: 10px;}
     cursor: pointer;}
 /*css video*/
 .video{ margin: auto; max-width: 100%;}
+.chamadaVideo{display: flex;background-color: #fd7eec;max-width: 100%;  align-items: center;
+    justify-content: center;margin-bottom: 50px; color: rgb(0, 0, 0);padding: 50px;font-family:monospace ;
+     font-size: 20px;}
 .playerWrapper{width: 90%;}
 /*tag contato*/
 .tagContato{

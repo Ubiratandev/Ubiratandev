@@ -15,20 +15,26 @@ const [width,setWidth]= useState(0)
 const caroussel = useRef();
 useEffect(()=> {console.log(caroussel.current?.scrollWidth,caroussel.current?.offsetWidth) 
     setWidth(caroussel.current?.scrollWidth, caroussel.current?.offsetWidth)},[])
+    const [imageClick,setimageClick]=useState()
+    const handClick=()=>{}
     return(
+        
         <div>
-
+         <h1 className='chamadaFotos'>Fotos do meu trabalho</h1>
        <div className='carrossel'>
            <motion.div ref={caroussel} className='carrossel2' whileTap={{cursor:"grabbing"}}>
             <motion.div className='inner' drag='x' dragConstraints={{right:0 ,left: (-width/2)-150}}
             initial={{x:100}}
             animate={{x:0}}
             transition={{duration:0.8}}>
-                {images.map(images =>(<motion.div key={images} className='item'><img src={images} ></img></motion.div>))}
+                {images.map(images =>(<motion.div key={images} className='item'><img src={images} onDoubleClick={handClick} ></img></motion.div>))}
             </motion.div>
            </motion.div>
        </div>
         </div>
+
+
+  
     )
 }
 export default Carrossel;
