@@ -1,8 +1,4 @@
 [build]
 base="."
-<<<<<<< HEAD
-build.command="npm run build"
-=======
-command="npm run build"
->>>>>>> 3ab3d21af84927f8ac863ae55d699c1c564a85df
+command = "npm run build"
 publish="./build/"
