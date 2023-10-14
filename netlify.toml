@@ -1,4 +1,4 @@
 [build]
-base="./site-odonto-completo"
+base= "."
 command = "npm run build"
 publish="./build/"
