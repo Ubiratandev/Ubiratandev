@@ -11,6 +11,7 @@ import Footer from './Components/Footer';
 import TagContato from './Components/TagContato';
 import Sobre from './Components/Sobre';
 import VideoPlayer from './Components/VideoPlayer';
+import Map from './Components/Map';
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
        <div className='FaixaApp'><FaixaInform/></div>
        <div className='carrosselApp'><Carrossel/></div>
        <div className='contatoApp'><FaleConosco/></div>
+       <div className='bannerApp'><h1>Como Chegar</h1></div>
+       <div className='mapApp'><Map/></div>
        <div className='footerApp'><Footer/></div>
        </div>
     </div>

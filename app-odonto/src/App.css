@@ -25,6 +25,8 @@ body{background-color: rgb(196, 196, 196);
     "faixa faixa faixa"
     "carrossel carrossel carrossel"
     "contato contato contado"
+    "banner banner banner"
+    "map map map"
     "footer footer footer" ;
 }
 
@@ -67,7 +69,9 @@ justify-content: center;
 .footerApp{max-width: 100%;}
 .tagApp{grid-area: tag; margin: auto;}
 .sobApp{grid-area: sobre;}
-
+.bannerApp{grid-area: banner; display: flex;justify-content:
+     center;align-items: center;margin: auto; font-family: monospace;}
+.mapApp{ grid-area: map;  width: 900px;height: 500px;  }
 /*Media querry*/
 @media(max-width:1145px){
     
@@ -88,6 +92,8 @@ justify-content: center;
        "faixa faixa "
        "carrossel carrossel "
        "contato contato "
+       "banner banner"
+       "map map"
        "footer footer " ;
    }
 
@@ -108,7 +114,9 @@ justify-content: center;
            "faixa "
            "carrossel"
            "contato "
-           "footer " ;
+           "footer "
+           "banner"
+           "map" ;
            justify-content: center;
            align-items: center;
            margin: auto;
@@ -158,12 +166,90 @@ justify-content: center;
 .tagApp{grid-area: tag;}
 .sobApp{grid-area: sobre;}
     }
+    .bannerApp{grid-area: banner; display: flex;justify-content:
+         center;align-items: center;margin: auto;font-family: monospace;}
+    .mapApp{max-width: 70%;width: 900px; height: 500px; grid-area: map; display: flex;justify-content: center;
+        align-items: center; margin: auto;}
+    /*media 900px*/
+    @media(max-width:850px){
+
+        .wrapper{ 
+            max-width: 800px;
+            display: grid;
+           row-gap: 30px;
+           grid-template-areas:
+           "header "
+           "tag "
+           "foto "
+           "texto "
+           "video"
+           "sobre "
+           "faixa "
+           "carrossel"
+           "contato "
+           "footer "
+           "banner"
+           "map" ;
+           justify-content: center;
+           align-items: center;
+           margin: auto;
+       }
+       
+
+.fotoApp{
+    grid-area: foto; 
+    max-width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+    align-items: center;
+      justify-content: center;
+   }
+    
+   .fotoApp div{ max-width: 100%;}
+   .videoApp{grid-area: video; margin: auto;}
+
+.textoApp{max-width: 800px;  grid-area:texto; align-items: center; margin: 50px;margin-top: 10px;}
+.textoApp div{max-width: 100%;}
+
+.carrosselApp{
+grid-area: carrossel;
+color:#fff;
+width:100%;
+margin:0 auto;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.footerApp{grid-area:footer}
+.headerApp{grid-area: header;}
+.contatoApp{position: fixed;
+         left: 95%;
+          bottom: 1px;}
+.FaixaApp{
+    grid-area: faixa;
+    justify-content: center;
+    align-items: center;
+    
+   
+}
+.FaixaApp div{
+    max-width: 100%;
+}
+.footerApp{max-width: 100%;}
+.tagApp{grid-area: tag;}
+.sobApp{grid-area: sobre;}
+    }
+    .bannerApp{grid-area: banner; display: flex;justify-content:
+         center;align-items: center;margin: auto;font-family: monospace;}
+    .mapApp{max-width: 70%;width: 800px; height: 500px; grid-area: map; display: flex;justify-content: center;
+        align-items: center; margin: auto;}
 
 
 
 
+    
     /*media 450 px*/
-@media(max-width:450px){
+@media(max-width:370px){
 
     body{background-color: rgb(196, 196, 196);
     }
@@ -192,6 +278,8 @@ justify-content: center;
         "faixa "
         "carrossel "
         "contato "
+        "banner"
+        "map"
         "footer" ;
     }
     
@@ -232,6 +320,91 @@ justify-content: center;
     }
     .footerApp{max-width: 100%;}
     .tagApp{grid-area: tag;}
-    .sobApp{grid-area: sobre;}    
+    .sobApp{grid-area: sobre;}   
+    .bannerApp{grid-area: banner; display: flex;justify-content: 
+        center;align-items: center;margin: auto;font-family: monospace;}
+    .mapApp{max-width: 70%; grid-area: map;width: 400px; height: 200px;
+         height: 200px;font-family: monospace; } 
 }
+
+
+/*media 360px*/
+@media(max-width:450px){
+
+    body{background-color: rgb(196, 196, 196);
+    }
+    .app{max-width: 100%;
+       text-align: center;
+       justify-content: center;
+       align-items: center;
+       margin: auto;
+        
+    }
+    .wrapper{ 
+         display: grid;
+        row-gap: 20px;
+        column-gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        
+        grid-template-areas:
+        "header"
+        "tag "
+        "foto "
+        "texto"
+        "video"
+        "sobre "
+        "faixa "
+        "carrossel "
+        "contato "
+        "banner"
+        "map"
+        "footer" ;
+    }
+    
+    
+    .fotoApp{grid-area: foto; max-width: 100%; padding: 10px; margin: auto;}
+    .videoApp{grid-area: video; margin: auto; max-width: 100%;}
+    .textoApp{
+        grid-area:texto;
+        max-width: 100%;
+      align-items: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    
+    .carrosselApp{
+    grid-area: carrossel;
+    color:#fff;
+    width:100%;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .footerApp{grid-area:footer}
+    .headerApp{grid-area: header;}
+    .contatoApp{position: fixed;
+             left: auto;}
+    .FaixaApp{
+        grid-area: faixa;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+       
+    }
+    .FaixaApp div{
+        max-width: 100%;
+    }
+    .footerApp{max-width: 100%;}
+    .tagApp{grid-area: tag;}
+    .sobApp{grid-area: sobre;}   
+    .bannerApp{grid-area: banner; display: flex;justify-content: 
+        center;align-items: center;margin: auto;font-family: monospace;}
+    .mapApp{max-width: 70%; grid-area: map;width: 300px; height: 150px;
+         height: 200px;font-family: monospace; } 
+}
+/* .mapApp{max-width: 70%; grid-area: map; width: 400px; height: 400px; background-color: blueviolet;} */
 /*media 650px*//*media 650px*//*media 650px*//*media 650px*/
