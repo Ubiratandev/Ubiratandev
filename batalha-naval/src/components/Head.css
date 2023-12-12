@@ -1,0 +1,11 @@
+body .head{
+    background-color: black;
+    color:#fff;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:#fff;
+    }

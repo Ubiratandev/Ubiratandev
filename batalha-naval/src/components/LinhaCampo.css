@@ -1,0 +1,31 @@
+.linhaCampo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 440px;
+}
+.div1{
+    
+    background-color:rgb(48, 48, 48);
+    border: 2px solid black;
+
+    width:40px;
+    height:40px;
+    image-orientation:from-image;
+}
+
+.linhaCampo div:hover{
+    cursor: pointer;
+    background-color: rgb(16, 241, 16);
+}
+.imgCont{
+    background-image:
+    url(
+  "C:\Users\Ubiratam\Desktop\BatalhaNaval\batalha-naval\src\imagens\ct1.png");
+    background-size: "cover";
+    height: 5vh;
+    
+    font-size:50px;
+    background-repeat:no-repeat;
+}

@@ -1,0 +1,10 @@
+.indiceH{
+    display: flex;
+    
+}
+.indiceH div{
+    background-color: aqua;
+    border: 2px solid black;
+    width:40px;
+    height:40px;
+}

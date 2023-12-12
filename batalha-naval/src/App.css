@@ -1,0 +1,44 @@
+body{
+ background-color: aqua;
+ 
+
+  
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    max-width: 80%;
+    height:500px;
+    display: grid;
+    grid-template-areas: 
+    'head head head menu'
+    'indiceV campo campo menu '
+    'none indiceH indiceH menu'
+    
+    ;
+ 
+}
+
+#head{
+    grid-area: head;
+}
+
+#campo{
+    grid-area:campo;
+}
+
+#idV{
+    grid-area:indiceV;
+   
+}
+#idH{
+    grid-area:indiceH;
+}
+#menu{
+    grid-area: menu;
+}
