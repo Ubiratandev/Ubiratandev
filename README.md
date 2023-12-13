@@ -13,7 +13,4 @@
 
   ### Estudando desenvolvimento front-end desde janeiro de 2023, e React desde julho de 2023, aluno da Universidade Federal Fluminense, necessitando de uma oportunidade para poder se desenvolver mais em React.
 
-  ## ultimos projetos:
-  <a src="alfaon.online"><p> landin-page odonto</p></a>
 
-  <a src="https://strong-eclair-aa4be0.netlify.app/"> <p>meu portfólio</p></a>
